@@ -13,7 +13,7 @@ function NoteBlock({ item, dropNotes, setOpenNote, notes }) {
         <div className="note-block__desc--subtitle">{item.subTitle}</div>
       </div>
       <div className="note-block__buttons">
-        <Link to="/note">
+        <Link to="/FrontendTestTask/note">
           <button onClick={() => openNote(item)} className="note-block__buttons--blue">
             Открыть
           </button>
