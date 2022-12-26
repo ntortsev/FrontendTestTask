@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1760px;
+  padding: 0 240px 0 210px;
+
+	@media (max-width: 1000px) {
+		padding: 0 70px 0 70px;
+	}
+
+	@media (max-width: 650px) {
+		padding: 0 50px 0 50px;
+	}
+}
+
+.main__flex {
+  display: flex;
+  justify-content: space-between;
+	margin-bottom: 40px;
+
+	@media (max-width: 1650px) {
+		flex-direction: column;
+	}
+}
+
+.note {
+  padding: 60px 130px 0 130px;
+
+	@media (max-width: 1185px) {
+    padding: 60px 0 0 0;
+  }
+
+	@media (max-width: 1000px) {
+		padding: 20px 0 20px 0px;
+	}
+
+	@media (max-width: 800px) {
+		padding: 20px 0 20px 0px;
+	}
+}

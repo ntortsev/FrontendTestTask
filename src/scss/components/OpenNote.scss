@@ -1,0 +1,37 @@
+.open-note {
+  word-wrap: break-word;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1e1f21;
+    margin-bottom: 30px;
+
+		@media (max-width: 1185px) {
+			font-size: 28px;
+			line-height: 28px;
+		}
+
+		@media (max-width: 800px) {
+			font-size: 20px;
+			line-height: 28px;
+		}
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #474747;
+
+		@media (max-width: 1185px) {
+			font-size: 20px;
+			line-height: 29px;
+		}
+
+		@media (max-width: 800px) {
+			font-size: 16px;
+			line-height: 28px;
+		}
+  }
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Main, Note } from './pages';
+import { Routes, Route } from 'react-router-dom';
+import './scss/app.scss';
+import React from 'react';
 
 function App() {
+  const [notes, setNotes] = React.useState([]);
+  const [openNote, setOpenNote] = React.useState({});
+
+  React.useEffect(() => {
+    if (localStorage.getItem('notes')) {
+      setNotes(JSON.parse(localStorage.getItem('notes')));
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={<Main setNotes={setNotes} notes={notes} setOpenNote={setOpenNote} />}
+      />
+      <Route path="/note" element={<Note openNote={openNote} />} />
+    </Routes>
   );
 }
 

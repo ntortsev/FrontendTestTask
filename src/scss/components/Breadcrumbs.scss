@@ -1,0 +1,17 @@
+.breadcrumbs {
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 25px;
+
+  &__main {
+    text-decoration-line: underline;
+    color: #2d6efc;
+  }
+
+  &__title {
+    color: #1f2426;
+    overflow: hidden;
+  }
+}
