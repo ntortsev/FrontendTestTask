@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Notes } from '../components';
 
-function Main({notes, setNotes, setOpenNote}) {
+function Main({ notes, setNotes, setOpenNote }) {
   return (
     <div className="main">
       <div className="container">
