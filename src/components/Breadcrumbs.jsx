@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../scss/components/Breadcrumbs.scss';
 
 function Breadcrumbs({ openNote, note }) {
-
   return (
     <div className="breadcrumbs">
       <Link to="/FrontendTestTask/">
