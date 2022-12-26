@@ -6,7 +6,7 @@ function Breadcrumbs({ openNote, note }) {
 
   return (
     <div className="breadcrumbs">
-      <Link to="/">
+      <Link to="/FrontendTestTask/">
         <span className="breadcrumbs__main">Главная</span>
       </Link>
       &nbsp;/&nbsp;{' '}

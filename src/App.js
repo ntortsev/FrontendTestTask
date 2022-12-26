@@ -16,10 +16,10 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/FrontendTestTask/"
         element={<Main setNotes={setNotes} notes={notes} setOpenNote={setOpenNote} />}
       />
-      <Route path="/note" element={<Note openNote={openNote} />} />
+      <Route path="/FrontendTestTask/note" element={<Note openNote={openNote} />} />
     </Routes>
   );
 }
